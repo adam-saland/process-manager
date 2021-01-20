@@ -1,0 +1,70 @@
+{
+  "runtime": {
+    "arguments": "",
+    "version": "canary"
+  },
+  "platform": {
+    "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
+    "autoShow": false,
+    "providerUrl": "ROOT_URL/provider.html",
+    "permissions": {
+      "ExternalWindow": {
+        "wrap": true
+      },
+      "System": {
+        "getAllExternalWindows": true,
+        "launchExternalProcess": true,
+        "readRegistryValue": false,
+        "terminateExternalProcess": true
+      }
+    },
+    "defaultWindowOptions": {
+      "name": "process-manager",
+      "version": "1.7.3",
+      "description": "Process Manager",
+      "url": "ROOT_URL/index.html",
+      "uuid": "process-manager",
+      "defaultHeight": 800,
+      "defaultWidth": 600,
+      "applicationIcon": "ROOT_URL/img/proc-mgr-icon.png",
+      "company": "OpenFin",
+      "autoShow": true
+    },
+    "defaultViewOptions": {
+      "experimental": {
+        "childWindows": true,
+        "analytics": true
+      }
+    },
+    "commands": [
+      {
+        "command": "stack.nextTab",
+        "keys": "Ctrl+Tab"
+      }
+    ]
+  },
+  "snapshot": {
+      "windows": [
+        {
+            "layout": {
+                "content": [
+                    {
+                        "type": "stack",
+                        "id": "no-drop-target",
+                        "content": [
+                            {
+                                "type": "component",
+                                "componentName": "view",
+                                "componentState": {
+                                    "processAffinity": "ps_1",
+                                    "url": "ROOT_URL/"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+      ]
+  }
+}
